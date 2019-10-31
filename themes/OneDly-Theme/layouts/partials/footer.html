@@ -1,0 +1,35 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" style="padding-left: 0px">
+				<ul class="list-inline">
+					<li>
+						<a class="page-scroll" href="#intro">Up</a>
+					</li>
+					{{ if (fileExists "imprint-gdpr/imprint.md") -}}
+						<li class="footer-menu-divider">&sdot;</li>
+						<li>
+							<a href="{{ "imprint-gdpr/imprint" | absURL }}" >Imprint</a>
+						</li>
+					{{- end }}
+					{{ if (fileExists "imprint-gdpr/gdpr.md") -}}
+						<li class="footer-menu-divider">&sdot;</li>
+						<li>
+							<a href="{{ "imprint-gdpr/gdpr" | absURL }}" >GDPR</a>
+						</li>
+					{{- end }}
+				 </ul>
+				 <p class="copyright text-muted small">Copyright &copy; {{ .Site.Title }} All Rights Reserved</p>
+			</div>
+            <div class="col-md-4" style="padding-right: 0px">
+				Built with <a href="http://gohugo.io">Hugo</a> and the
+				<a href="https://github.com/cdeck3r/OneDly-Theme">OneDly project</a>
+				theme.
+            </div>
+        </div>
+    </div>
+</footer>
+{{ partial "js.html" . }}
+</body>
+</html>
