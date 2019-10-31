@@ -6,6 +6,10 @@ author = "Sarat Rajan"
 sec = 2
 +++
 
+<img src="https://raw.githubusercontent.com/saratrajan/poet-blog/master/static/images/value-delivered.png"
+     alt="POET-logo" style="width:800px;"
+      />
+
 ### Cost Matters
 
 <table class="tg">
