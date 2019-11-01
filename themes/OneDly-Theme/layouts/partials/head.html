@@ -14,7 +14,7 @@
 		{{ end }}{{ end }}{{ end }}"> 
     
 	<meta name="author" content=" {{ .Site.Params.author_name | default .Site.Author }} ">  
-    <base href="{{ .Site.BaseURL }}">
+    <base href="{{ . }}">
     <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
 
     <!-- Bootstrap Core CSS -->
